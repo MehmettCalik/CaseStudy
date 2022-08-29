@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3343264964819561885}
   - component: {fileID: 4513534539185829383}
   - component: {fileID: 6840386970571875771}
+  - component: {fileID: -6575657021439235509}
   m_Layer: 0
   m_Name: HeartGem_Flat
   m_TagString: Untagged
@@ -79,3 +80,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &-6575657021439235509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5754927101012903373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f427fc8d8758e054dab9907bcf714ca3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodePos: {fileID: 0}
+  posY: 0

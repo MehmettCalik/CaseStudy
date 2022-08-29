@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4310282916761808054}
   - component: {fileID: 5828182116759592020}
   - component: {fileID: 4977731646873556491}
+  - component: {fileID: -8791483529371853972}
   m_Layer: 0
   m_Name: SphereGem_Flat
   m_TagString: Untagged
@@ -79,3 +80,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &-8791483529371853972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6941698350810829016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f427fc8d8758e054dab9907bcf714ca3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodePos: {fileID: 0}
+  posY: 0

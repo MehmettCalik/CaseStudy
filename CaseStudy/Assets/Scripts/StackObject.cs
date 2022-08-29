@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class StackObject : MonoBehaviour
 {
-
     public Transform nodePos;
     public float posY;
 
@@ -17,6 +16,6 @@ public class StackObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(Mathf.Lerp(transform.position.x, nodePos.position.x, Time.deltaTime * 5), nodePos.position.y + posY, nodePos.position.z);
+        transform.position = new Vector3(Mathf.Lerp(transform.position.x, nodePos.position.x, Time.deltaTime*25), nodePos.position.y + posY, nodePos.position.z);
     }
 }

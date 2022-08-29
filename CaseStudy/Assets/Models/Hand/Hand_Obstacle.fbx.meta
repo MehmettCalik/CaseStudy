@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: bde597250e6dc47cf92487a36f7f90ad
 ModelImporter:
-  serializedVersion: 20200
+  serializedVersion: 19301
   internalIDToNameTable:
   - first:
       74: -6484306384366869599
@@ -27,7 +27,8 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'LeftUpperLeg' not found\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -35,7 +36,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -61,7 +62,6 @@ ModelImporter:
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
-    bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
     maxBonesPerVertex: 4
@@ -71,9 +71,6 @@ ModelImporter:
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
-    secondaryUVMarginMethod: 1
-    secondaryUVMinLightmapResolution: 40
-    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
@@ -89,7 +86,147 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: Hand_Obstacle(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hand_GEO
+      parentName: Hand_Obstacle(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.00000020633634, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 0.9999998, z: 0.9999998}
+    - name: nail_GEO
+      parentName: Hand_Obstacle(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.00000020633634, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 0.9999998, z: 0.9999998}
+    - name: masterCtrl_GRP.001
+      parentName: Hand_Obstacle(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.00000010140798, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
+    - name: arm_JNT
+      parentName: masterCtrl_GRP.001
+      position: {x: 0.11765288, y: 0.056939736, z: -5.5147257}
+      rotation: {x: -0.062282447, y: 0.93926334, z: 0.21199931, w: -0.2626057}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000004}
+    - name: arm_JNT.001
+      parentName: arm_JNT
+      position: {x: 6.9849193e-10, y: 2.0440955, z: -0.000000022351742}
+      rotation: {x: -0.0014303438, y: -0.0003656894, z: 0.00048686564, w: 0.99999887}
+      scale: {x: 1.000001, y: 1.0000005, z: 1.0000004}
+    - name: wrist_JNT
+      parentName: arm_JNT.001
+      position: {x: -0.0005272479, y: 2.6051269, z: -0.0015451536}
+      rotation: {x: 0.006433304, y: -0.11409941, z: -0.041460145, w: 0.99258304}
+      scale: {x: 1.0000019, y: 1.0000006, z: 1.0000006}
+    - name: midl01
+      parentName: wrist_JNT
+      position: {x: -0.018072419, y: 1.1799738, z: 0.06523544}
+      rotation: {x: -0.043868694, y: -0.48999572, z: 0.08032431, w: 0.866907}
+      scale: {x: 1.0000011, y: 1.0000008, z: 1.0000005}
+    - name: midl02
+      parentName: midl01
+      position: {x: -0.000000022351742, y: 0.5635481, z: -0.00000045262277}
+      rotation: {x: -0.037526634, y: -0.29268122, z: 0.018014565, w: 0.95530367}
+      scale: {x: 1.0000013, y: 1.0000006, z: 0.999999}
+    - name: midl03
+      parentName: midl02
+      position: {x: 0.00000002165325, y: 0.34065822, z: 0.000000020256266}
+      rotation: {x: -0.018485501, y: 0.06523913, z: 0.060104556, w: 0.9958864}
+      scale: {x: 1.0000008, y: 1, z: 1.0000006}
+    - name: midl04
+      parentName: midl03
+      position: {x: 0.0000026151538, y: 0.3919241, z: 0.0000011008233}
+      rotation: {x: 0.000000024214376, y: -0.8132134, z: 0.000000040978176, w: 0.5819655}
+      scale: {x: 1, y: 1.0000001, z: 1.0000002}
+    - name: indx01
+      parentName: wrist_JNT
+      position: {x: 0.24073657, y: 1.1923618, z: 0.17063886}
+      rotation: {x: 0.019925002, y: -0.8970934, z: 0.03892603, w: 0.43967184}
+      scale: {x: 0.9999998, y: 1.0000007, z: 1.0000002}
+    - name: indx02
+      parentName: indx01
+      position: {x: -0.000000078231096, y: 0.48512542, z: -0.00000008381903}
+      rotation: {x: 0.004358522, y: 0.17165625, z: 0.11527843, w: 0.97837925}
+      scale: {x: 1.0000014, y: 1.0000004, z: 0.99999934}
+    - name: indx03
+      parentName: indx02
+      position: {x: -0.000000078231096, y: 0.3043402, z: -0.00000011979137}
+      rotation: {x: -0.011061485, y: -0.04921062, z: 0.014136056, w: 0.9986271}
+      scale: {x: 1.0000006, y: 1.0000012, z: 1.0000012}
+    - name: indx04
+      parentName: indx03
+      position: {x: 0.00000089546666, y: 0.3404276, z: -0.00000009307405}
+      rotation: {x: -0.0000000032596286, y: -0.82749933, z: -0.000000016763805, w: 0.56146663}
+      scale: {x: 1.0000008, y: 0.99999994, z: 0.9999997}
+    - name: thumb01
+      parentName: wrist_JNT
+      position: {x: 0.4537604, y: 0.36570948, z: 0.076443404}
+      rotation: {x: -0.5312641, y: -0.6772727, z: 0.185948, w: -0.47379693}
+      scale: {x: 1.0000005, y: 1.000001, z: 1.0000011}
+    - name: thumb02
+      parentName: thumb01
+      position: {x: 0.00000016205013, y: 0.403521, z: -0.00000055879354}
+      rotation: {x: 0.11208791, y: -0.036118887, z: 0.06971197, w: 0.9905917}
+      scale: {x: 1.0000001, y: 0.99999934, z: 1.0000004}
+    - name: thumb03
+      parentName: thumb02
+      position: {x: 0.00000047218055, y: 0.31904894, z: -0.0000005280599}
+      rotation: {x: -0.019978058, y: 0.11512263, z: -0.007447134, w: 0.99312246}
+      scale: {x: 0.99999994, y: 1.0000012, z: 1.0000008}
+    - name: thumb04
+      parentName: thumb03
+      position: {x: -0.0000004246831, y: 0.43078613, z: -0.0000008940697}
+      rotation: {x: -0.00000016018747, y: 0.7768691, z: 0.000000054016702, w: -0.6296622}
+      scale: {x: 0.9999998, y: 1.0000004, z: 1.0000001}
+    - name: pinky01
+      parentName: wrist_JNT
+      position: {x: -0.4268229, y: 1.0202844, z: -0.2162207}
+      rotation: {x: -0.16567004, y: -0.06392937, z: 0.13570137, w: 0.97470593}
+      scale: {x: 1.000002, y: 1.0000013, z: 1.0000004}
+    - name: pinky02
+      parentName: pinky01
+      position: {x: -0.0000001299195, y: 0.33849913, z: -0.000000044703484}
+      rotation: {x: 0.048036464, y: -0.044446822, z: -0.03424603, w: 0.99726844}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000004}
+    - name: pinky03
+      parentName: pinky02
+      position: {x: -0.000000012922101, y: 0.2317657, z: 0.00000010058284}
+      rotation: {x: -0.01409588, y: -0.11860938, z: -0.0104920445, w: 0.99278545}
+      scale: {x: 1.000001, y: 1.0000008, z: 0.9999992}
+    - name: pinky04
+      parentName: pinky03
+      position: {x: -0.00000020273728, y: 0.27217913, z: -0.0000013075769}
+      rotation: {x: -0.000000065192566, y: -0.70890826, z: -0.000000089406946, w: 0.7053006}
+      scale: {x: 0.99999934, y: 0.9999991, z: 0.9999991}
+    - name: ring01
+      parentName: wrist_JNT
+      position: {x: -0.24959975, y: 1.1346371, z: -0.09609224}
+      rotation: {x: -0.1948282, y: -0.029192587, z: 0.6056525, w: 0.77095705}
+      scale: {x: 1.0000018, y: 1.0000014, z: 1.0000006}
+    - name: ring02
+      parentName: ring01
+      position: {x: -0.00000043027103, y: 0.49806267, z: 0.00000059232116}
+      rotation: {x: -0.0009001339, y: -0.21335219, z: 0.103294216, w: 0.971499}
+      scale: {x: 1.0000012, y: 1.0000002, z: 1.0000001}
+    - name: ring03
+      parentName: ring02
+      position: {x: 0.00000007089693, y: 0.27855042, z: 0.00000019837171}
+      rotation: {x: -0.015622283, y: -0.2363045, z: 0.019099599, w: 0.97136563}
+      scale: {x: 1.0000029, y: 1.000001, z: 0.9999984}
+    - name: ring04
+      parentName: ring03
+      position: {x: 0.000000030733645, y: 0.33981127, z: 0.00000005029142}
+      rotation: {x: -0.000000013038513, y: -0.7699237, z: 0.00000005587934, w: 0.638136}
+      scale: {x: 0.9999985, y: 0.9999997, z: 1.0000008}
+    - name: Braclet
+      parentName: Hand_Obstacle(Clone)
+      position: {x: -0, y: -0.00000042591665, z: -1.2631927}
+      rotation: {x: -0.00000022061727, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -100,14 +237,13 @@ ModelImporter:
     globalScale: 12
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
-  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  avatarSetup: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
